@@ -1,0 +1,18 @@
+.idea
+node_modules/
+.DS_Store
+.cache/
+dist/
+coverage/
+.vscode/
+.env
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
