@@ -1,10 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./models/product.model.js");
 const productRoute = require("./routes/product.route.js");
 
-const uri =
-  "mongodb+srv://syedkamahmed:uAkzJT3LD18xAWDt@backenddb.gdelu.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB";
+const uri = process.env.MONGO_URI;
 
 const app = express();
 
